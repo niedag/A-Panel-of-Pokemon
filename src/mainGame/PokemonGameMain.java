@@ -7,6 +7,8 @@ import javax.imageio.ImageIO;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import javax.sound.sampled.FloatControl;
+
 import java.net.URL;
 import javax.swing.*;
 import java.awt.*;
@@ -149,12 +151,16 @@ public class PokemonGameMain extends JFrame {
 		return label;
 	}
 	
-	public void playMusic(String fileName) {
+	public void playMusic(String fileName) { // Play an audio file using Java Sound API
 		try {
-			File soundFile = new File(fileName); // Open an audio input stream from a wave File
-			AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+			AudioInputStream audioIn = AudioSystem.getAudioInputStream( // Create AudioSystemStream object
+					new File(fileName));
 			clip = AudioSystem.getClip(); // Get a sound clip resource.
 			clip.open(audioIn); // Open audio clip and load samples from the audio input stream.
+			
+			FloatControl gainControl = // Setting the audio volume with MASTER_GAIN controls 
+					(FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+			gainControl.setValue(-20.0f);
 			clip.start();
 			clip.loop(clip.LOOP_CONTINUOUSLY);
 		} 
