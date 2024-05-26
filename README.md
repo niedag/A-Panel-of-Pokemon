@@ -4,4 +4,4 @@ A Panel of Pokemon is a game created using Java on Eclipse Oxygen in 2019 for a 
 Demonstration of applying OOP principles such as inheritance, encapsulation, abstraction and polymorphism.
 Examples of method overriding and method overloading
 
-After opening the game up in Eclipse, the game can be run by running the PokemonGameMain.java file
+After opening the game up in Eclipse, the game can be run by running the PokemonGameMain.java file in the mainGame package folder.
