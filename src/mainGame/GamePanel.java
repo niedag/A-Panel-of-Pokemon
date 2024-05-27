@@ -1,7 +1,6 @@
 package mainGame;
 
 import javax.sound.sampled.*;
-import javax.sound.*;
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
@@ -118,10 +117,15 @@ public class GamePanel extends JPanel { //takes in player movement input, the ba
 	}
 	public void playMusic(String fileName) {
 		try {
-			File soundFile = new File(fileName); // Open an audio input stream from a wave File
-			AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+			AudioInputStream audioIn = AudioSystem.getAudioInputStream( // Create AudioSystemStream object with wave file as parameter
+					new File(fileName));
 			clip = AudioSystem.getClip(); // Get a sound clip resource.
 			clip.open(audioIn); // Open audio clip and load samples from the audio input stream.
+
+			FloatControl gainControl = // Setting the audio volume with MASTER_GAIN controls 
+					(FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+			gainControl.setValue(-20.0f);
+			
 			clip.start();
 			clip.loop(clip.LOOP_CONTINUOUSLY);
 		} 
