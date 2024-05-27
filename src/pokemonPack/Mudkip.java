@@ -9,7 +9,7 @@ public class Mudkip extends Pokemon {
 	
 	public Mudkip() {
 		super("Mudkip", new ImageIcon("MudkipBackSpriteV2.png").getImage(), 
-				getRandomNumberInRange(18, 26), getRandomNumberInRange(10,14), getRandomNumberInRange(4,	13));
+				getRandomNumberInRange(500, 760), getRandomNumberInRange(1000,1400), getRandomNumberInRange(4,	13));
 		this.xPosition = 170;
 		this.yPosition = 234;
 		this.addPokeMove(new Move("Water Gun", 40, 30));
