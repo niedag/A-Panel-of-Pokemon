@@ -5,3 +5,5 @@ Demonstration of applying OOP principles such as inheritance, encapsulation, abs
 Examples of method overriding and method overloading
 
 After opening the game up in Eclipse, the game can be run by running the PokemonGameMain.java file in the mainGame package folder.
+
+Runs on default Java library. Still figuring out how to create an executable java application to distribute the game...
