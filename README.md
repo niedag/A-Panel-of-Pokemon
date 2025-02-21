@@ -8,3 +8,7 @@ After opening the game up in Eclipse, the game can be run by running the Pokemon
 
 Runs on default Java library. Still figuring out how to create an executable java application to distribute the game...
 Can run currently using latest versions of Java (5/28/2024)
+
+Next project: 
+Build a new game from scratch with Java or with Unity
+- Multiplayer game, able to host the game locally, send an executable to another person to play it!
