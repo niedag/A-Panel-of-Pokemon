@@ -1,6 +1,7 @@
 # A Panel of Pokemon
 A Panel of Pokemon is a game created using Java on Eclipse Oxygen in 2019 for a final project in AP Computer Science.
-The game operates on a single Java panel. The layout of the map is entirely procedurally generated with grass and tree barriers in the center. 
+The game operates on a single Java panel. The layout of the map is entirely procedurally generated with grass and tree barriers in the center. Heal your Pokemon at the Pokemon Center and defeat the Pokemon Gym boss!
+
 After downloading the project file, the game can be run by running the PokemonGameMain.java file in the mainGame package folder. Enjoy!
 
 Controls:
