@@ -7,7 +7,7 @@ The game operates on a single Java panel. The layout of the map is entirely proc
 
 
 ## How to Run
-After downloading the project file, the game can be run by running the PokemonGameMain.java file in the mainGame package folder. Enjoy!
+After downloading the project file, the game can be run by running the PokemonGameMain.java file in the src/mainGame package folder. Enjoy!
 
 Controls:
 WASD for movement
