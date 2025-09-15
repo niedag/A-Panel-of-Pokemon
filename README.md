@@ -5,6 +5,8 @@ Examples of method overriding and method overloading.
 
 The game operates on a single Java panel. The layout of the map is entirely procedurally generated with grass and tree barriers in the center. Heal your Pokemon at the Pokemon Center and defeat the Pokemon Gym boss!
 
+
+## How to Run
 After downloading the project file, the game can be run by running the PokemonGameMain.java file in the mainGame package folder. Enjoy!
 
 Controls:
